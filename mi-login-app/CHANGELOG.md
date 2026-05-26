@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Auth API**: Created the initial POST endpoint for user authentication (`app/api/auth/login/route.ts`) to receive and process JSON payloads.
-- **Home Page**: Created a clean and responsive entry point view (`app/page.tsx`) using Tailwind CSS for the ERP system landing.
+- **Home Page**: Created a clean and responsive entry point view (`app/page.tsx`) using Tailwind CSS for the login project landing.
 - **Client Tooling**: Configured Thunder Client extension within Visual Studio Code to validate backend API methods and request/response life cycles.
 
 ### Fixed
