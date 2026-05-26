@@ -18,3 +18,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - **Environment Rules**: Documented the execution policy override needed for PowerShell script execution blocks and standardized terminal execution inside Node/Command Prompt environment.
+- **Database Connection String**: Corrected the interpolation constraints and credentials syntax inside `.env.local` to successfully establish the handshaking with MongoDB Atlas Cluster.
