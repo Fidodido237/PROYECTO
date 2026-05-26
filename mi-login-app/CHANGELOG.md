@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Client Tooling**: Configured Thunder Client extension within Visual Studio Code to validate backend API methods and request/response life cycles.
 - **Database Connection**: Integrated Mongoose and established a global caching connection singleton (`lib/db.ts`) to connect Next.js with MongoDB Atlas.
 - **User Architecture**: Created the strict database schema for user credentials (`models/User.ts`) enforcing lowercase, unique emails, and automatic timestamps.
+- **Cryptographic Security**: Integrated `bcryptjs` for secure asynchronous password hashing and verification workflows.
+- **Session Tokenization**: Implemented `jsonwebtoken` (JWT) generation to issue secure, signed state-verification passes upon successful login.
 
 ### Fixed
 - **Environment Rules**: Documented the execution policy override needed for PowerShell script execution blocks and standardized terminal execution inside Node/Command Prompt environment.
