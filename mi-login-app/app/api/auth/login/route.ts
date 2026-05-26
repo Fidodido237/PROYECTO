@@ -7,7 +7,7 @@ export async function POST(request: Request) {
    
     return NextResponse.json(
       { 
-        message: "¡Conexión exitosa! El backend recibió tus datos correctamente.", 
+        message: "Petición POST recibida. Endpoint de autenticación activo (Modo Desarrollo).", 
         datosRecibidos: body 
       }, 
       { status: 200 }
