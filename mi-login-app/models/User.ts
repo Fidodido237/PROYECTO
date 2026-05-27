@@ -13,9 +13,22 @@ const UserSchema = new Schema(
       type: String,
       required: [true, "La contraseña es obligatoria."],
     },
+    
+    loginAttempts: {
+      type: Number,
+      default: 0,
+    },
+    lockUntil: {
+      type: Date,
+    },
+    lastLoginIP: {
+      type: String,
+      default: "",
+    },
   },
   {
-    timestamps: true, 
+    timestamps: true,
+    strict: false,
   }
 );
 
