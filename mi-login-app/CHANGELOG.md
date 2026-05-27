@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **User Architecture**: Created the strict database schema for user credentials (`models/User.ts`) enforcing lowercase, unique emails, and automatic timestamps.
 - **Cryptographic Security**: Integrated `bcryptjs` for secure asynchronous password hashing and verification workflows.
 - **Session Tokenization**: Implemented `jsonwebtoken` (JWT) generation to issue secure, signed state-verification passes upon successful login.
+### Added
+- **Progressive Security Middleware**: Implemented an automated perimeter security layer that triggers Turnstile/Captcha requirements after 3 failed login attempts.
+- **Account Lockout & IP Logging**: Added a strict 15-minute brute-force mitigation system that restricts account access on the 5th consecutive authentication failure using dynamic `lockUntil` validation, while capturing and displaying the client's remote IP address in the security response.
 
 ### Fixed
 - **Environment Rules**: Documented the execution policy override needed for PowerShell script execution blocks and standardized terminal execution inside Node/Command Prompt environment.
